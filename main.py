@@ -41,7 +41,58 @@ add_edge(edges, 100, 320, 0, 200, 320, 0)
 add_edge(edges, 100, 340, 0, 100, 320, 0)
 add_edge(edges, 200, 340, 0, 200, 320, 0)
 
+'''
+green1 = new_matrix(4,4)
+for i in range(250):
+    add_edge(green1, 0, i, 0, i, i, 0)
+draw_lines(green1, screen, color)
+
+green2 = new_matrix(4,4)
+color = [0, 220, 0]
+for i in range(250):
+    add_edge(green2, i, 0, 0, i, i, 0)
+draw_lines(green2, screen, color)
+
+green3 = new_matrix(4,4)
+color = [0, 185, 0]
+for i in range(250):
+    add_edge(green3, 0, i+250, 0, i, i+250, 0)
+draw_lines(green3, screen, color)
+
+green4 = new_matrix(4,4)
+color = [0, 150, 0]
+for i in range(250):
+    add_edge(green4, i+250, 0, 0, i+250, i, 0)
+draw_lines(green4, screen, color)
+
+green5 = new_matrix(4,4)
+color = [0, 115, 0]
+for i in range(250):
+    add_edge(green5, 250, i, 0, i+250, i, 0)
+draw_lines(green5, screen, color)
+
+green6 = new_matrix(4,4)
+color = [0, 80, 0]
+for i in range(250):
+    add_edge(green6, i, 250, 0, i, i+250, 0)
+draw_lines(green6, screen, color)
+
+green7 = new_matrix(4,4)
+color = [0, 45, 0]
+for i in range(250):
+    add_edge(green7, 250, i+250, 0, i+250, i+250, 0)
+draw_lines(green7, screen, color)
+
+green8 = new_matrix(4,4)
+color = [0, 10, 0]
+for i in range(250):
+    add_edge(green8, i+250, 250, 0, i+250, i+250, 0)
+draw_lines(green8, screen, color)
+'''
+
+#draw_lines(gallery, screen, color)
 draw_lines(edges, screen, color)
 #draw_lines(Y, screen, color)
 #draw_lines( matrix, screen, color )
 display(screen)
+save_extension(screen, 'img.png')
